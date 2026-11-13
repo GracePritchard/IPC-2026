@@ -6,8 +6,6 @@ proyecto ejemploIPC 2026
 > [!WARNING]
 > **Proyecto docente: simulación con fines exclusivamente académicos.**
 >
-> Este repositorio se ha creado para la asignatura _<nombre de la asignatura>_ con el objetivo de practicar el uso de Git y GitHub. **No es un pipeline funcional ni validado.**
+> Este repositorio se ha creado para la asignatura de ntroducción a la Programación Científica del Máster de bioinformática  dela UNIR con el objetivo de practicar el uso de Git y GitHub. **No es un pipeline funcional ni validado.** 
 >
-> - Los scripts de `scripts/` son esqueletos que solo documentan sus entradas y salidas; pueden estar **incompletos o vacíos**.
-> - Los ficheros de `results/` son **ficheros de ejemplo**, no resultados reales.
-> - No debe usarse para análisis científicos ni clínicos.
+>Los scripts son esqueletos (pueden estar vacíos) y los resultados son ficheros de ejemplo.**No debe usarse para análisis científicos ni clínicos.**
