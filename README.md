@@ -20,13 +20,45 @@ proyecto ejemploIPC 2026
 ![Estado](https://img.shields.io/badge/estado-proyecto%20docente-orange)
 [![Licencia: MIT](https://img.shields.io/badge/licencia-GPLv3-yellow.svg)](LICENSE)
 
-# Detección de variantes germinales (SNVs e INDELs) en genoma completo (WGS)
+```mermaid
+flowchart LR
+    FASTQ[("FASTQ<br/>lecturas en bruto")]
+    REF[("hg38.fa<br/>referencia")]
+    DBSNP[("dbSNP")]
+    CACHE[("Caché de VEP")]
 
-![Genoma de referencia](https://img.shields.io/badge/genoma-hg38-blue)
-![Datos](https://img.shields.io/badge/datos-WGS-green)
-![Variantes](https://img.shields.io/badge/variantes-SNV%20%7C%20INDEL-purple)
-![Entorno](https://img.shields.io/badge/entorno-conda-44A833?logo=anaconda&logoColor=white)
-![Scripts](https://img.shields.io/badge/scripts-Bash-4EAA25?logo=gnubash&logoColor=white)
-![Estado](https://img.shields.io/badge/estado-proyecto%20docente-orange)
+    S1["01 · FastQC<br/>control de calidad"]
+    S2["02 · BWA-MEM2<br/>alineamiento"]
+    S3["03 · Picard<br/>métricas del BAM"]
+    S4["04 · HaplotypeCaller<br/>llamada de variantes"]
+    S5["05 · VariantFiltration<br/>filtrado"]
+    S6["06 · VEP<br/>anotación"]
 
-Este repositorio contiene un pipeline para la detección de variantes germinales...
+    BAM[("BAM")]
+    RAW[("raw.vcf.gz")]
+    FIL[("filtered.vcf.gz")]
+    ANN[("annotated.vcf.gz")]
+
+    FASTQ --> S1
+    FASTQ --> S2
+    REF --> S2
+    S2 --> BAM
+    BAM --> S3
+    BAM --> S4
+    REF --> S4
+    DBSNP --> S4
+    S4 --> RAW
+    RAW --> S5
+    S5 --> FIL
+    FIL --> S6
+    CACHE --> S6
+    S6 --> ANN
+
+    classDef paso fill:#dbeafe,stroke:#1d4ed8,color:#000
+    classDef dato fill:#fef9c3,stroke:#a16207,color:#000
+    classDef final fill:#dcfce7,stroke:#15803d,color:#000
+
+    class S1,S2,S3,S4,S5,S6 paso
+    class FASTQ,REF,DBSNP,CACHE,BAM,RAW,FIL dato
+    class ANN final
+```
