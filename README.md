@@ -12,7 +12,7 @@ proyecto ejemploIPC 2026
 > Los scripts son esqueletos (pueden estar vacíos) y los resultados son ficheros de ejemplo. **No debe usarse para análisis científicos ni clínicos.**
 
 
-![Genoma de referencia](https://img.shields.io/badge/genoma-hg38-blue)
+[![Genoma de referencia](https://img.shields.io/badge/genoma-hg38-blue)](https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000001405.26/)
 ![Datos](https://img.shields.io/badge/datos-WGS-green)
 ![Variantes](https://img.shields.io/badge/variantes-SNV%20%7C%20INDEL-purple)
 [![Entorno](http://img.shields.io/badge/run%20with-conda-3EB049?labelColor=000000&logo=anaconda)](https://docs.conda.io/en/latest/)
