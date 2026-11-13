@@ -15,7 +15,18 @@ proyecto ejemploIPC 2026
 ![Genoma de referencia](https://img.shields.io/badge/genoma-hg38-blue)
 ![Datos](https://img.shields.io/badge/datos-WGS-green)
 ![Variantes](https://img.shields.io/badge/variantes-SNV%20%7C%20INDEL-purple)
-![Entorno](https://img.shields.io/badge/entorno-conda-44A833?logo=anaconda&logoColor=white)
+![Entorno](http://img.shields.io/badge/run%20with-conda-3EB049?labelColor=000000&logo=anaconda)](https://docs.conda.io/en/latest/)
 ![Scripts](https://img.shields.io/badge/scripts-Bash-4EAA25?logo=gnubash&logoColor=white)
 ![Estado](https://img.shields.io/badge/estado-proyecto%20docente-orange)
 ![Licencia](https://img.shields.io/badge/licencia-ver%20LICENSE-lightgrey)
+
+# Detección de variantes germinales (SNVs e INDELs) en genoma completo (WGS)
+
+![Genoma de referencia](https://img.shields.io/badge/genoma-hg38-blue)
+![Datos](https://img.shields.io/badge/datos-WGS-green)
+![Variantes](https://img.shields.io/badge/variantes-SNV%20%7C%20INDEL-purple)
+![Entorno](https://img.shields.io/badge/entorno-conda-44A833?logo=anaconda&logoColor=white)
+![Scripts](https://img.shields.io/badge/scripts-Bash-4EAA25?logo=gnubash&logoColor=white)
+![Estado](https://img.shields.io/badge/estado-proyecto%20docente-orange)
+
+Este repositorio contiene un pipeline para la detección de variantes germinales...
