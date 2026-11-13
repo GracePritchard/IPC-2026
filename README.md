@@ -68,8 +68,8 @@ flowchart LR
 
 ### Requisitos
 
-- [Conda](https://docs.conda.io/) o [Mamba](https://mamba.readthedocs.io/) (recomendado, es más rápido)
-- Sistema Linux (algunas herramientas, como BWA-MEM2, están pensadas para Linux x86_64)
+- [Conda](https://docs.conda.io/) (o [Miniconda](https://docs.conda.io/en/latest/miniconda.html))
+- Se recomienda usar Linux (algunas herramientas, como BWA-MEM2, están pensadas para Linux x86_64 )
 - Espacio en disco para la referencia, la caché de VEP y los resultados (varios GB por muestra)
 
 ### Pasos
