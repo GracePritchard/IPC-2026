@@ -16,9 +16,9 @@ proyecto ejemploIPC 2026
 ![Datos](https://img.shields.io/badge/datos-WGS-green)
 ![Variantes](https://img.shields.io/badge/variantes-SNV%20%7C%20INDEL-purple)
 [![Entorno](http://img.shields.io/badge/run%20with-conda-3EB049?labelColor=000000&logo=anaconda)](https://docs.conda.io/en/latest/)
-![Scripts](https://img.shields.io/badge/scripts-Bash-4EAA25?logo=gnubash&logoColor=white)
+[![Scripts](https://img.shields.io/badge/scripts-Bash-4EAA25?logo=gnubash&logoColor=white)](scripts/)
 ![Estado](https://img.shields.io/badge/estado-proyecto%20docente-orange)
-![Licencia](https://img.shields.io/badge/licencia-ver%20LICENSE-lightgrey)
+[![Licencia: MIT](https://img.shields.io/badge/licencia-MIT-yellow.svg)](LICENSE)
 
 # Detección de variantes germinales (SNVs e INDELs) en genoma completo (WGS)
 
